@@ -112,8 +112,10 @@ function doIt() {
         
         var dataArr = data.split(",");
 
-        dataArr[0] = process.argv[2]
-        findSong(dataArr[1]);
+        search = dataArr[0] 
+        term = dataArr[1]
+        
+        findSong()
         
     })
 }
