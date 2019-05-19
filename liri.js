@@ -13,21 +13,22 @@ if (search === "concert-this") {
     findConcert()
 }
 
-if (search === "spotify-this-song" && !term) {
-    term = "The Sign"
+if (search === "spotify-this-song" && term.length === 0) {
+    term = "The Sign by Ace of Base"
+    findSong()
+
+} 
+else if (search === "spotify-this-song") {
     findSong()
 } 
 
-if (search === "spotify-this-song") {
-    findSong()
-} 
 
-if (search === "movie-this"){
-    findMovie();
-}
 
-if (search == "movie-this" && !term) {
+if (search == "movie-this" && term.length === 0) {
     term = "Mr.Nobody"
+    findMovie()
+}
+else if (search === "movie-this"){
     findMovie()
 }
 
@@ -50,7 +51,7 @@ function findConcert() {
     })
 }
 
-function findSong(term) {
+function findSong() {
     spotify
     .search({type: "track", query:term})
     .then(function(response){
