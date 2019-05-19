@@ -24,7 +24,7 @@ else if (search === "spotify-this-song") {
 
 
 
-if (search == "movie-this" && term.length === 0) {
+if (search === "movie-this" && term.length === 0) {
     term = "Mr.Nobody"
     findMovie()
 }
