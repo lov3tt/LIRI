@@ -26,11 +26,6 @@ if (search === "movie-this"){
     findMovie();
 }
 
-if (search == "movie-this" && !term) {
-    term = "Mr.Nobody"
-    findMovie()
-}
-
 if (search === "do-what-it-says") {
     doIt();
 }

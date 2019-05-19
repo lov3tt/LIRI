@@ -1,7 +1,6 @@
 {
   "name": "liri",
   "version": "1.0.0",
-  "description": "",
   "main": "keys.js",
   "dependencies": {
     "axios": "^0.18.0",
@@ -22,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/lov3tt/LIRI/issues"
   },
-  "homepage": "https://github.com/lov3tt/LIRI#readme"
+  "homepage": "https://github.com/lov3tt/LIRI#readme",
+  "description": ""
 }
